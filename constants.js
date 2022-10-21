@@ -8,15 +8,15 @@ export const NETWORKS = {
     aggregatorUrl: 'http://localhost:3000',
     verificationGateway: '0x25499e61C26f08846Cc71caB34bB16cEd8Aa4aA3',
   },
-  arbitrumRinkeby: {
-    chainId: '421611', // 42161
-    name: 'Arbitrum Rinkeby',
-    rpcUrl: 'https://rinkeby.arbitrum.io/rpc',
-    aggregatorUrl: 'https://arbitrum-testnet.blswallet.org',
-    verificationGateway: '0xa15954659EFce154a3B45cE88D8158A02bE2049A',
+  arbitrumGoerli: {
+    chainId: '421613',
+    name: 'Arbitrum Goerli',
+    rpcUrl: 'https://goerli-rollup.arbitrum.io/rpc',
+    aggregatorUrl: 'https://arbitrum-goerli.blswallet.org',
+    verificationGateway: '0xAf96d6e0817Ff8658f0E2a39b641920fA7fF0957',
   },
 };
 
 export const WALLETS_FILE_PATH = path.join('wallet-data', 'wallets.csv');
 
-export const CURRENT_NETWORK = NETWORKS.localhost;
+export const CURRENT_NETWORK = NETWORKS.arbitrumGoerli;
